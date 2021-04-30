@@ -1,0 +1,8 @@
+CREATE TABLE Order_Line(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    orderID INT NOT NULL,
+    itemID INT NOT NULL,
+    qty INT NOT NULL,
+    FOREIGN KEY (orderID) REFERENCES `Order` (id),
+    FOREIGN KEY (itemID) REFERENCES `Item` (id)
+)

@@ -1,0 +1,5 @@
+CREATE TABLE `Order` (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    userID INT NOT NULL,
+    FOREIGN KEY (userID) REFERENCES `Customer`(id)
+);
